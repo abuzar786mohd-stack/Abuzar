@@ -121,7 +121,7 @@ let currentMessageIndex = 0;
 const messages = [
     "Happy Birthday My bestay 🥳",
     "Getting older, getting cuter hehe >",
-    "Stay blessed, stay healthy & may no evil eye ever touch our friendship ❤️",
+    "Stay blessed, stay healthy & may no evil eye ever touch our friendship ❤️!",
     "Hope your fortune keeps flowing, until you don't know how to spend it!"
 ];
 
@@ -157,8 +157,8 @@ function startTypingEffect(element, text) {
 
 continueBtn.addEventListener('click', () => {
     userName = nameInput.value.trim() || "Birthday girl";
-    if (userName.toLowerCase() !== "Ruqayya") {
-        alert("Access Denied! ❌ Only Ruqayya can continue.");
+    if (userName.toLowerCase() !== "Rooh") {
+        alert("Access Denied! ❌ Only Rooh can continue.");
         return;
     }
     displayName.textContent = userName;
@@ -197,7 +197,7 @@ messageBox.addEventListener('click', () => {
     }
 });
 yesBtn.addEventListener('click', () => {
-    showPopup(`Hope you're happy on your special day you must be happy !`, mainScreen);
+    showPopup(`Hope you're happy on your special day you must be happy!`, mainScreen);
     setTimeout(() => messageBox.click(), 1000);
 });
 yesYesBtn.addEventListener('click', () => {
