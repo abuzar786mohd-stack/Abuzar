@@ -58,7 +58,7 @@
         <div class="box">
             <p>Your name?</p>
             <div class="input-group">
-                <input type="text" id="nameInput" placeholder="ruqayya">
+                <input type="text" id="nameInput" placeholder="Pookie birthday">
                 <button class="continue-btn" id="continueBtn">Continue</button>
             </div>
         </div>
@@ -158,7 +158,7 @@ function startTypingEffect(element, text) {
 continueBtn.addEventListener('click', () => {
     userName = nameInput.value.trim() || "Birthday girl";
     if (userName.toLowerCase() !== "Rooh") {
-        alert("Access Denied! ❌ Only Rooh can continue.");
+        alert("Access Denied! ❌ Only rooh can continue.");
         return;
     }
     displayName.textContent = userName;
