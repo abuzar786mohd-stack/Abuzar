@@ -145,7 +145,6 @@ const yesYesBtn = document.getElementById('yesYesBtn');
 let userName = '';
 let currentMessageIndex = 0;
 const messages = [
-const messages = [
     "Happy Birthday My bestay 🥳",
     "Getting older, getting cuter hehe >",
     "Stay blessed, stay healthy & may no evil eye ever touch our friendship ❤️!",
@@ -185,7 +184,6 @@ type();
 continueBtn.addEventListener('click', () => {
 userName = nameInput.value.trim() || "Birthday girl";
 
-// FIX: case-insensitive check  
 if (userName.toLowerCase() !== "rooh") {  
     alert("Access Denied! ❌ Only Rooh can continue.");  
     return;  
@@ -193,7 +191,6 @@ if (userName.toLowerCase() !== "rooh") {
 
 displayName.textContent = userName;  
 
-// ---- FIXED: auto-change removed, now manual with OK button ----
 showPopup(`Hi, ${userName} 👋`, popupScreen);
 
 okBtn.onclick = () => {
@@ -239,13 +236,11 @@ iconsContainer.style.display = 'none';
 });
 
 yesBtn.addEventListener('click', () => {
-    showPopup("Hope you\'re happy on your special day you must be happy!", mainScreen);
-    // ❌ Auto click removed
+    showPopup("Hope you're happy on your special day you must be happy!", mainScreen);
 });
 
 yesYesBtn.addEventListener('click', () => {
 showPopup("I worked hard to make this for you ❤️", mainScreen);
-// ❌ Auto click removed
 });
 
 okBtn.addEventListener('click', () => {
@@ -259,4 +254,4 @@ showScreen(nameScreen);
 });
 </script>  
 </body>  
-    </html>
+</html>
