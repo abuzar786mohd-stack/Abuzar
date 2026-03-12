@@ -171,11 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentMessageIndex = 0;
 
     const messages = [
-        { text: "Happy Birthday My bestay 🥳", button: "Press here" },
+        { text: "Happy Birthday 🥳", button: "Press here" },
         { text: "Getting older, getting cuter hehe", button: "Press here >" },
         { text: "Stay blessed, stay healthy & may no evil eye ever touch our friendship ❤️🧿.", button: "Press here!" },
         { text: "Hope your fortune keeps flowing, until you don't know how to spend it.", button: "Press here!" },
-        { text: "Thank you for being my biggest support, caring about me and always being there for me! ❤️", button: "Press here!" } // ✅ Added last line
+        { text: "Thank you for remembering me in your prayers! ❤️", button: "Press here!" } // ✅ Added last line
     ];
 
     document.body.addEventListener('click', () => {
@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
     continueBtn.addEventListener('click', () => {
         userName = nameInput.value.trim() || "Birthday girl";
 
-        if (userName.toLowerCase() !== "haniya") {
-            alert("Access Denied! ❌ Only haniya can continue.");
+        if (userName.toLowerCase() !== "aaliya") {
+            alert("Access Denied! ❌ Only aaliya can continue.");
             return;
         }
 
@@ -227,9 +227,9 @@ document.addEventListener('DOMContentLoaded', () => {
         okBtn.onclick = () => {
             showPopup(`It's your birthday today!`, popupScreen);
             okBtn.onclick = () => {
-                showPopup(`Happy Birthday to one of the most special people in my life! ❤️🎉`, popupScreen);
+                showPopup(`Happy Birthday offend hone wali! ❤️🎉`, popupScreen);
                 okBtn.onclick = () => {
-                    showPopup(`May you always be blessed with good health, endless happiness, and strength to achieve every dream you hold close to your heart. Having you as a best friend is truly a blessing, and I wish your journey ahead is as beautiful and inspiring as you are!`, popupScreen);
+                    showPopup(`May you always be blessed with good health, endless happiness, and strength to achieve every dream you hold close to your heart. and I wish your journey ahead is as beautiful and inspiring as you are!`, popupScreen);
                     okBtn.onclick = () => {
                         colorPrompt.innerHTML = `Oh, ${userName}, which color do you want to choose?`;
                         showScreen(colorScreen);
